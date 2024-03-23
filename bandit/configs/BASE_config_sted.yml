@@ -1,0 +1,8 @@
+microscope: STED
+obj_names:
+- Resolution
+- Bleach
+- SNR
+model_config:
+  path: ../data/prefnet/2023-07-14-14-23-36/weights.t7
+  config_path: ../data/prefnet/2023-07-14-14-23-36/config.json

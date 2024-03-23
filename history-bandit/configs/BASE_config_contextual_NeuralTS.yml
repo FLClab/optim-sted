@@ -1,0 +1,2 @@
+_BASE_: BASE_config_contextual_LinTSDiag.yml
+regressor_name: ContextualNeuralTS

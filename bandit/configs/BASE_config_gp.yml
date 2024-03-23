@@ -1,0 +1,37 @@
+_BASE_: BASE_config.yml
+pareto_opts:
+  mode: default
+articulation_opts:
+  borders:
+    mins:
+      - null
+      - null
+      - null
+    maxs:
+      - null
+      - null
+      - null
+n_divs_default: 10
+regressor_args:
+  Bleach:
+    bandwidth: 2.0
+    s_lb: 0.001
+    s_ub: 0.3
+  Resolution:
+    bandwidth: 2.0
+    s_lb: 0.001
+    s_ub: 0.3
+  SNR:
+    bandwidth: 2.0
+    s_lb: 0.001
+    s_ub: 0.3
+  Squirrel:
+    bandwidth: 2.0
+    s_lb: 0.001
+    s_ub: 0.3
+  default:
+    bandwidth: 0.66
+    s_lb: 0.001
+    s_ub: 0.3
+    normalize_y: false
+regressor_name: sklearn_GP

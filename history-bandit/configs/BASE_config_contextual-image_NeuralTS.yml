@@ -1,0 +1,5 @@
+_BASE_: BASE_config_contextual-image_LinTSDiag.yml
+save_folder: ../data/contextual-image
+ctx_opts:
+  mode: image
+regressor_name: ContextualImageNeuralTS

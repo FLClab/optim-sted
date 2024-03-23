@@ -1,0 +1,12 @@
+_BASE_: BASE_config_dymin_bayes.yml
+nbre_trials: 3
+param_names:
+- p_sted
+- threshold_count
+random_state: 42
+x_maxs:
+- 350.0e-3
+- 25.
+x_mins:
+- 0.
+- 0.

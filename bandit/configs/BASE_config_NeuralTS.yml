@@ -1,0 +1,2 @@
+_BASE_: BASE_config_LinTSDiag.yml
+regressor_name: NeuralTS

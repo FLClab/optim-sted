@@ -1,0 +1,38 @@
+_BASE_:
+- BASE_config_abberior-sted.yml
+- BASE_config_LinTSDiag.yml
+nbre_trials: 1
+articulation_opts:
+  borders: null
+obj_names:
+- Resolution
+- SNR
+params_conf:
+  ch1_p_ex: 5.
+  ch2_p_ex: 3.
+  pdt: 10.0e-6
+param_names:
+- ch1_p_sted
+- ch1_p_ex
+- ch1_linestep
+- ch2_p_sted
+- ch2_p_ex
+- ch2_linestep
+x_maxs:
+- 50.0
+- 20.0
+- 6
+- 50.0
+- 4.0
+- 6
+x_mins:
+- 0.
+- 0.
+- 1.
+- 0.
+- 0.
+- 1.
+regressor_args:
+  default:
+    n_features: 6
+with_time: false

@@ -1,0 +1,83 @@
+datamap_opts:
+  mode: generate
+  shape:
+    - 96
+    - 96
+  sources:
+    - 100
+    - 250
+  molecules: 40
+  molecules_scale: 0.1
+  shape_sources:
+    - 2
+    - 2
+  random_state: 42
+  sequence_per_trial: false
+  path:
+    - ../data/datamap/PSD95-Bassoon
+articulation_opts:
+  borders:
+    mins:
+      - 40.0
+      - 0.0
+      - 0.0
+    maxs:
+      - 180.0
+      - 1.0
+      - 1.0
+  cmap: rainbow
+default_values_dict:
+  num_acquisition: 1
+  p_ex: 2.0e-06
+  p_sted: 150.0e-3
+  pdt: 10.0e-6
+  pixelsize: 2.0e-08
+knowledge_opts:
+  use: true
+  update_posterior: true
+  num_random_samples: 3
+  mode: expert
+  expert_knowledge: "DyMIN"
+  pareto_samples:
+    - ../data/exhaustive/20220906-161541_DyMIN_NSGA_None
+routine_opts:
+  use: false
+  routine_file: "complete-routines.json"
+  mode: select
+  routine_id: 2
+  models: null
+hide_acquisition: true
+rescale_opts:
+  use: false
+  mins:
+    - 40.0
+    - 0.0
+    - 0.0
+  maxs:
+    - 180.0
+    - 1.0
+    - 1.0
+model_config:
+  nb_obj: 3
+  middle_size: 10
+  path: ../data/prefnet/2022-12-08-13-37-53/weights.t7
+  config_path: ../data/prefnet/2022-12-08-13-37-53/config.json
+n_divs_default: 10
+nbre_trials: 50
+multiprocess_opts:
+  num_processes: 0
+  verbose: True
+obj_names:
+- Resolution
+- Squirrel
+- Bleach
+optim_length: 200
+params_conf:
+  p_ex: 1.0e-06
+  p_sted: 0.0
+  pdt: 10.0e-6
+pareto_opts:
+  mode: nsga
+random_state: null
+save_folder: ../data
+with_time: true

@@ -1,0 +1,8 @@
+_BASE_: BASE_config_dymin_bayes.yml
+param_names:
+- threshold_count
+random_state: 42
+x_maxs:
+- 50.
+x_mins:
+- 0.

@@ -1,0 +1,41 @@
+_BASE_: BASE_config.yml
+pareto_opts:
+  mode: nsga
+regressor_args:
+  Bleach:
+    _lambda: 0.1
+    nu: 0.01
+  Resolution:
+    _lambda: 0.1
+    nu: 0.01
+    min_features:
+      - 40.
+    max_features:
+      - 250.
+  SNR:
+    _lambda: 0.1
+    nu: 0.01
+  Squirrel:
+    _lambda: 0.1
+    nu: 0.01
+  FFTMetric:
+    _lambda: 0.1
+    nu: 0.1    
+  default:
+    n_features: 3
+    n_hidden_dim: 32
+    _lambda: 0.0001
+    nu: 0.01
+    learning_rate: 1.0e-3
+    min_features:
+      - 0.
+    max_features:
+      - 1.0
+    update_exploration: false
+    pretrained_opts:
+        udpate: True
+        path: "../data/pretrained/20221128-112415_2b6deef8_DyMIN_None_LinTSDiag"
+        load_all: False
+        trial: 0
+        use: False
+regressor_name: LinTSDiag

@@ -1,0 +1,38 @@
+_BASE_: BASE_config.yml
+save_folder: ../data/contextual
+regressor_args:
+  Bleach:
+    _lambda: 0.25
+    nu: 0.5
+  Resolution:
+    _lambda: 0.25
+    nu: 0.5
+    min_features:
+      - 40.
+    max_features:
+      - 250.
+  SNR:
+    _lambda: 0.25
+    nu: 0.5
+  Squirrel:
+    _lambda: 0.25
+    nu: 0.5
+  default:
+    every-step-decision: false
+    ctx_features: 5
+    pretrained_opts:
+        udpate: True
+        path: "../data/contextual/debug"
+        trial: 0
+        use: False
+    n_features: 3
+    n_hidden_dim: 32
+    _lambda: 0.0001
+    nu: 0.01
+    learning_rate: 5.0e-3
+    min_features:
+      - 0.
+    max_features:
+      - 1.0
+    update_exploration: false
+regressor_name: ContextualLinTSDiag

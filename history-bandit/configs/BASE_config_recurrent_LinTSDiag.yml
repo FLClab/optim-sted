@@ -1,0 +1,31 @@
+_BASE_: BASE_config.yml
+save_folder: ../data/recurrent
+regressor_args:
+  Bleach:
+    _lambda: 0.1
+    nu: 0.25
+  Resolution:
+    _lambda: 0.1
+    nu: 0.25
+    min_features:
+      - 40.
+    max_features:
+      - 250.
+  SNR:
+    _lambda: 0.1
+    nu: 0.25
+  Squirrel:
+    _lambda: 0.1
+    nu: 0.25
+  default:
+    n_features: 3
+    n_hidden_dim: 32
+    _lambda: 0.0001
+    nu: 0.01
+    learning_rate: 1.0e-3
+    min_features:
+      - 0.
+    max_features:
+      - 1.0
+    update_exploration: false
+regressor_name: LinTSLSTMDiag

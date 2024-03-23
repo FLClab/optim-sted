@@ -1,0 +1,14 @@
+microscope_conf:
+    mode: AbberiorDyMIN
+    acquisition-mode: "naive"
+default_values_dict:
+  num_acquisition: 1
+  imagesize:
+    - 2.88e-6
+    - 2.88e-6
+  p_ex: 10.
+  p_sted: 15.
+  pdt: 10.0e-6
+  pixelsize:
+    - 3.0e-8
+    - 3.0e-8

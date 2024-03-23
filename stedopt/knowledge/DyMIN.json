@@ -1,0 +1,39 @@
+{
+    "knowledge": [
+        {
+            "p_sted": 0.15,
+            "p_ex": 0.000002,
+            "threshold_count": 0,
+            "decision_time": 0.000002,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.15,
+            "p_ex": 0.000002,
+            "threshold_count": 5,
+            "decision_time": 0.000002,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.15,
+            "p_ex": 0.000002,
+            "threshold_count": 10,
+            "decision_time": 0.000002,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0,
+            "p_ex": 0.000002,
+            "threshold_count": 10,
+            "decision_time": 0.000002,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.15,
+            "p_ex": 0.000001,
+            "threshold_count": 5,
+            "decision_time": 0.000002,
+            "pdt": 0.00001
+        }
+    ]
+}

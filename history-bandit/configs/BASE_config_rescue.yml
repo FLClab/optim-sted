@@ -1,0 +1,12 @@
+_BASE_: BASE_config.yml
+default_values_dict:
+  lower_threshold:
+  - 2
+  - -1
+  upper_threshold:
+  - 4
+  - -1
+  decision_time:
+  - 5.0e-6
+  - -1
+microscope: RESCue

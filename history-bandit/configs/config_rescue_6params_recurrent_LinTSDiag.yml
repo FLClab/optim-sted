@@ -1,0 +1,29 @@
+_BASE_:
+- BASE_config_rescue.yml
+- BASE_config_recurrent_LinTSDiag.yml
+nbre_trials: 10
+random_state: 42
+param_names:
+- p_sted
+- p_ex
+- pdt
+- lower_threshold
+- upper_threshold
+- decision_time
+x_maxs:
+- 350.0e-3
+- 2.0e-6
+- 10.0e-6
+- 25.
+- 25.
+- 2.5e-6
+x_mins:
+- 0.
+- 0.
+- 0.
+- 0.
+- 0.
+- 0.
+regressor_args:
+  default:
+    n_features: 6

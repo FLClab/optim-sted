@@ -1,0 +1,20 @@
+_BASE_:
+- BASE_config_gp.yml
+- BASE_config_dymin.yml
+nbre_trials: 1
+param_names:
+- p_sted
+- p_ex
+- threshold_count
+- decision_time
+random_state: 42
+x_maxs:
+- 350.0e-3
+- 2.0e-6
+- 50.
+- 10.0e-6
+x_mins:
+- 0.
+- 0.
+- 0.
+- 0.

@@ -1,0 +1,92 @@
+[
+    {
+        "Resolution": 60,
+        "Bleach": 0.3,
+        "Squirrel": 0.15
+    },
+    {
+        "Resolution": 60,
+        "Bleach": 0.3,
+        "Squirrel": 0.2
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.3,
+        "Squirrel": 0.25
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.3,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.4,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.3,
+        "Squirrel": 0.25
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.4,
+        "Squirrel": 0.25
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.5,
+        "Squirrel": 0.25
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.3,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.4,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.5,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 110,
+        "Bleach": 0.5,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 120,
+        "Bleach": 0.5,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 140,
+        "Bleach": 0.5,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 160,
+        "Bleach": 0.5,
+        "Squirrel": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 1,
+        "Squirrel": 0.5
+    },
+    {
+        "Resolution": 180,
+        "Bleach": 1,
+        "Squirrel": 0.5
+    },
+    {
+        "Resolution": 180,
+        "Bleach": 1,
+        "Squirrel": 1
+    }
+]

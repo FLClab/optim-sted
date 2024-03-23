@@ -1,0 +1,48 @@
+_BASE_: BASE_config.yml
+save_folder: ../data/contextual-image
+ctx_opts:
+  mode: image
+regressor_args:
+  Bleach:
+    _lambda: 0.25
+    nu: 0.25
+  FFTMetric:
+    _lambda: 0.25
+    nu: 0.25
+  Resolution:
+    _lambda: 0.25
+    nu: 0.25
+    min_features:
+      - 40.
+    max_features:
+      - 250.
+  SNR:
+    _lambda: 0.25
+    nu: 0.25
+  Squirrel:
+    _lambda: 0.25
+    nu: 0.25
+  default:
+    share_ctx: True
+    pretrained_opts:
+        udpate: true
+        path: "../data/contextual-image/bckp"
+        load_all: False
+        trial: 0
+        use: false
+    teacher_opts:
+        use: False
+        alpha: 1.0e-3
+    every-step-decision: False
+    ctx_features: 1
+    n_features: 3
+    n_hidden_dim: 32
+    _lambda: 0.0001
+    nu: 0.01
+    learning_rate: 1.0e-2
+    min_features:
+      - 0.
+    max_features:
+      - 1.0
+    update_exploration: false
+regressor_name: ContextualImageLinTSDiag

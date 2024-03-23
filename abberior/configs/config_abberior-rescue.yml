@@ -1,0 +1,99 @@
+borders: null
+default_values_dict:
+  imagesize:
+    - 3.84e-6
+    - 3.84e-6
+  p_ex: 10.
+  p_sted: 15.
+  pdt: 10.0e-6
+  pixelsize:
+    - 1.5e-08
+    - 1.5e-08
+microscope_conf:
+    mode: AbberiorRESCue
+    advanced: False
+model_config:
+  nb_obj: 3
+  middle_size: 10
+  path: ../data/prefnet/2021-06-22-10-20-29/weights.t7
+  config_path: ../data/prefnet/2021-06-22-10-20-29/config.json
+n_divs_default: 10
+nbre_trials: 1
+obj_names:
+- Resolution
+- Bleach
+- Squirrel
+obj_normalization:
+  Bleach:
+    max: 0.5
+    min: 0
+  Resolution:
+    max: 250.0
+    min: 40.
+  SNR:
+    max: 2.0
+    min: 0
+  Squirrel:
+    max: 20.0
+    min: 0
+optim_length: 100
+param_names:
+- p_ex
+- pdt
+- ch1_signal_level
+- ch2_signal_level
+- ch2_strength
+- ch2_p_sted
+params_conf:
+  p_ex: 1.
+  pdt: 10.0e-6
+pareto_opts:
+  mode: nsga
+regressor_args:
+  Bleach:
+    alpha_init: 1.0
+    lambda_init: 1.0
+  Resolution:
+    alpha_init: 1.0
+    lambda_init: 1.0
+    alpha_1: 100.0
+    alpha_2: 10.0
+    lambda_1: 0.1
+    lambda_2: 10.0
+  SNR:
+    alpha_init: 1.0
+    lambda_init: 1.0
+  Squirrel:
+    alpha_init: 1.0
+    lambda_init: 1.0
+    alpha_1: 10.0
+    alpha_2: 0.1
+    lambda_1: 0.1
+    lambda_2: 10.0
+  default:
+    alpha_1: 1.0e-06
+    alpha_2: 1.0e-06
+    alpha_init: 1.0e-06
+    compute_score: true
+    degree: 3
+    fit_intercept: false
+    lambda_1: 1.0e-06
+    lambda_2: 1.0e-06
+    lambda_init: 1.0e-06
+    tol: 1.0e-06
+regressor_name: sklearn_BayesRidge
+with_time: false
+x_maxs:
+- 1.
+- 40.0e-6
+- 50.
+- 50.
+- 10.
+- 50.
+x_mins:
+- 0.
+- 10.0e-6
+- 0.
+- 0.
+- 0.
+- 0.

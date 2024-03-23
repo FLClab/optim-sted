@@ -1,0 +1,109 @@
+borders: null
+default_values_dict:
+  background: 499999.99999999994
+  bleach: true
+  darkcount: 0
+  decision_time:
+  - 1.0e-05
+  - 1.0e-05
+  - -1
+  im_size_nm: 1000
+  molecules_disposition: null
+  nb_molecules_per_point_src: 30
+  nb_pt_src: 8
+  noise: true
+  num_acquisition: 1
+  p_ex: 5.0e-06
+  p_sted: 35.0e-3
+  pdt: 100.0e-6
+  pixelsize: 2.0e-08
+microscope: STED
+model_config:
+  nb_obj: 3
+  middle_size: 10
+  path: ../data/prefnet/2021-06-22-10-20-29/weights.t7
+  config_path: ../data/prefnet/2021-06-22-10-20-29/config.json
+n_divs_default: 10
+nbre_trials: 3
+obj_names:
+- Resolution
+- Bleach
+- SNR
+obj_normalization:
+  Bleach:
+    max: 0.25
+    min: 0
+  Resolution:
+    max: 250.0
+    min: 40.
+  SNR:
+    max: 2.0
+    min: 0
+  Squirrel:
+    max: 20.0
+    min: 0
+optim_length: 100
+param_names:
+- p_sted
+- p_ex
+- pdt
+params_conf:
+  p_ex: 5.0e-06
+  p_sted: 0.0
+  pdt: 10.0e-6
+pareto_opts:
+  mode: nsga
+regressor_args:
+  Bleach:
+    alpha_init: 1.0
+    lambda_init: 1.0
+    cte: 1.0
+    noise_level: 0.5
+  Resolution:
+    alpha_init: 1.0
+    lambda_init: 1.0
+    alpha_1: 100.0
+    alpha_2: 10.0
+    lambda_1: 0.1
+    lambda_2: 10.0
+    cte: 0.1
+    noise_level: 0.01
+  SNR:
+    alpha_init: 1.0
+    lambda_init: 1.0
+  Squirrel:
+    alpha_init: 1.0
+    lambda_init: 1.0
+    alpha_1: 10.0
+    alpha_2: 0.1
+    lambda_1: 0.1
+    lambda_2: 10.0
+    cte: 0.1
+    noise_level: 0.025
+  default:
+    alpha_1: 1.0e-06
+    alpha_2: 1.0e-06
+    alpha_init: 1.0e-06
+    compute_score: true
+    degree: 4
+    fit_intercept: false
+    lambda_1: 1.0e-06
+    lambda_2: 1.0e-06
+    lambda_init: 1.0e-06
+    tol: 1.0e-06
+    cte: 1.0
+    length_scale: 0.33
+    noise_level: 0.01
+    alpha: null
+    normalize_y: False
+regressor_name: sklearn_BayesRidge
+save_folder: ../data
+with_time: false
+x_maxs:
+- 350.e-3
+- 250.0e-6
+- 100.0e-6
+x_mins:
+- 0.0
+- 0.0
+- 10.0e-6

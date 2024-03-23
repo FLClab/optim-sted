@@ -1,0 +1,43 @@
+{
+    "knowledge": [
+        {
+            "p_sted" : 25.0,
+            "p_ex":2.0,
+            "pdt": 10e-6,
+            "linestep": 3,
+            "ch1_p_sted" : 25.0,
+            "ch1_p_ex":15.0,
+            "ch1_linestep": 3,
+            "ch2_p_sted" : 25.0,
+            "ch2_p_ex": 3.0,
+            "ch2_linestep": 3,
+            "spectral_max" : 720.0e-9
+        },
+        {
+            "p_sted" : 0.0,
+            "p_ex": 2.0,
+            "pdt": 10e-6,
+            "linestep": 3,
+            "ch1_p_sted" : 0.0,
+            "ch1_p_ex":15.0,
+            "ch1_linestep": 3,
+            "ch2_p_sted" : 0.0,
+            "ch2_p_ex":3.0,
+            "ch2_linestep": 3,
+            "spectral_max" : 720.0e-9
+        },
+        {
+            "p_sted" : 25.0,
+            "p_ex": 1.0,
+            "pdt": 10e-6,
+            "linestep": 3,
+            "ch1_p_sted" : 25.0,
+            "ch1_p_ex":15.0,
+            "ch1_linestep": 3,
+            "ch2_p_sted" : 25.0,
+            "ch2_p_ex": 2.0,
+            "ch2_linestep": 3,
+            "spectral_max" : 720.0e-9
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+_BASE_:
+- BASE_config_dymin.yml
+- BASE_config_contextual-image_LinTSDiag.yml
+nbre_trials: 10
+param_names:
+- threshold_count
+random_state: 42
+x_maxs:
+- 25.
+x_mins:
+- 0.
+regressor_args:
+  default:
+    n_features: 2
+    update_exploration: false

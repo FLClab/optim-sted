@@ -1,0 +1,26 @@
+_BASE_:
+- BASE_config_abberior-sted.yml
+- BASE_config_LinTSDiag.yml
+nbre_trials: 1
+obj_names:
+- Resolution
+- Bleach
+- SNR
+param_names:
+- p_sted
+- p_ex
+- pdt
+- linestep
+x_maxs:
+- 50.0
+- 15.0
+- 30.0e-6
+- 15
+x_mins:
+- 0.
+- 0.
+- 1.0e-6
+- 1
+regressor_args:
+  default:
+    n_features: 4

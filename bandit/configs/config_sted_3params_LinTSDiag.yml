@@ -1,0 +1,19 @@
+_BASE_:
+- BASE_config_sted.yml
+- BASE_config_LinTSDiag.yml
+param_names:
+- p_sted
+- p_ex
+- pdt
+random_state: 42
+x_maxs:
+- 300.0e-3
+- 2.0e-6
+- 30.0e-6
+x_mins:
+- 0.
+- 0.
+- 0.
+regressor_args:
+  default:
+    n_features: 3

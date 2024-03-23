@@ -1,0 +1,34 @@
+_BASE_:
+- BASE_config_abberior-dymin.yml
+- BASE_config_contextual-image_LinTSDiag.yml
+nbre_trials: 1
+param_names:
+- naive_ch3_p_sted
+- p_ex
+- pdt
+- naive_ch1_thresholds
+- naive_ch1_times
+- naive_ch2_thresholds
+- naive_ch2_times
+x_maxs:
+- 50.0
+- 5.0
+- 30.0e-6
+- 15.
+- 40.
+- 15.
+- 40.
+x_mins:
+- 0.
+- 0.
+- 1.0e-6
+- 0.
+- 10.
+- 0.
+- 10.
+optim_length: 5
+regressor_args:
+  default:
+    n_features: 7
+    pretrained_opts:
+      use: False

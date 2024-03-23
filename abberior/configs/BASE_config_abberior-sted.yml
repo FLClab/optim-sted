@@ -1,0 +1,3 @@
+microscope_conf:
+    mode: AbberiorSTED
+    acquisition-mode: "normal"

@@ -1,0 +1,10 @@
+_BASE_: BASE_config_rescue_bayes.yml
+param_names:
+- lower_threshold
+- upper_threshold
+x_maxs:
+- 50.
+- 50.
+x_mins:
+- 0.
+- 0.

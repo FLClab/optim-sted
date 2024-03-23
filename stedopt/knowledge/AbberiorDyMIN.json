@@ -1,0 +1,40 @@
+{
+    "knowledge": [
+        {
+            "naive_ch3_p_sted": 30.0,
+            "p_ex": 10.0,
+            "pdt": 12e-6,
+            "naive_ch1_thresholds": 2.0,
+            "naive_ch1_times": 15.0,
+            "naive_ch2_thresholds": 1.0,
+            "naive_ch2_times": 15.0
+        },
+        {
+            "naive_ch3_p_sted": 30.0,
+            "p_ex": 5.0,
+            "pdt": 12e-6,
+            "naive_ch1_thresholds": 1.0,
+            "naive_ch1_times": 15.0,
+            "naive_ch2_thresholds": 1.0,
+            "naive_ch2_times": 15.0
+        },
+        {
+            "naive_ch3_p_sted": 30.0,
+            "p_ex": 5.0,
+            "pdt": 15e-6,
+            "naive_ch1_thresholds": 2.0,
+            "naive_ch1_times": 15.0,
+            "naive_ch2_thresholds": 1.0,
+            "naive_ch2_times": 15.0
+        },
+        {
+            "naive_ch3_p_sted": 0.0,
+            "p_ex": 10.0,
+            "pdt": 10e-6,
+            "naive_ch1_thresholds": 1.0,
+            "naive_ch1_times": 10.0,
+            "naive_ch2_thresholds": 1.0,
+            "naive_ch2_times": 10.0
+        }
+    ]
+}

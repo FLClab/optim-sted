@@ -1,0 +1,3 @@
+microscope_conf:
+    mode: AbberiorDyMIN
+    acquisition-mode: "naive"

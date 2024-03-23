@@ -1,0 +1,15 @@
+_BASE_: BASE_config_rescue_bayes.yml
+nbre_trials: 3
+random_state: 42
+param_names:
+- p_sted
+- lower_threshold
+- upper_threshold
+x_maxs:
+- 175.0e-3
+- 50.
+- 50.
+x_mins:
+- 0.
+- 0.
+- 0.

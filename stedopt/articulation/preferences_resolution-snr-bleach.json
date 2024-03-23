@@ -1,0 +1,102 @@
+[
+    {
+        "Resolution": 60,
+        "Bleach": 0.4,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 60,
+        "Bleach": 0.4,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 60,
+        "Bleach": 0.6,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.4,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.4,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.5,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.5,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.7,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 80,
+        "Bleach": 0.7,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.4,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.4,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.5,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.5,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.7,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.7,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 120,
+        "Bleach": 0.5,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 120,
+        "Bleach": 0.5,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.9,
+        "SNR": 0.3
+    },
+    {
+        "Resolution": 100,
+        "Bleach": 0.9,
+        "SNR": 0.1
+    },
+    {
+        "Resolution": 180,
+        "Bleach": 1,
+        "SNR": 0
+    }
+]

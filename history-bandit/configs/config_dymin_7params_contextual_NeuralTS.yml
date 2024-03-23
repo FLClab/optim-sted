@@ -1,0 +1,26 @@
+_BASE_:
+- BASE_config_dymin.yml
+- BASE_config_contextual_NeuralTS.yml
+param_names:
+- p_sted
+- p_ex
+- pdt
+- threshold_count
+- decision_time
+random_state: 42
+x_maxs:
+- 300.0e-3
+- 2.0e-6
+- 30.0e-6
+- 15.
+- 5.0e-6
+x_mins:
+- 0.
+- 0.
+- 0.
+- 0.
+- 0.
+regressor_args:
+  default:
+    n_features: 7
+    update_exploration: false

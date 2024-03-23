@@ -1,0 +1,12 @@
+_BASE_: "BASE_config_dymin_LinTSDiag.yml"
+nbre_trials: 1
+param_names:
+- threshold_count
+random_state: 42
+x_maxs:
+- 50.
+x_mins:
+- 0.
+regressor_args:
+  default:
+    n_features: 2

@@ -1,0 +1,44 @@
+{
+    "knowledge": [
+        {
+            "p_sted": 0,
+            "p_ex": 0.000002,
+            "lower_threshold": 0,
+            "upper_threshold": 10,
+            "decision_time": 0.0000025,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.08,
+            "p_ex": 0.000002,
+            "lower_threshold": 0,
+            "upper_threshold": 10,
+            "decision_time": 0.0000025,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.04,
+            "p_ex": 0.000002,
+            "lower_threshold": 3,
+            "upper_threshold": 10,
+            "decision_time": 0.0000025,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.08,
+            "p_ex": 0.000002,
+            "lower_threshold": 3,
+            "upper_threshold": 10,
+            "decision_time": 0.0000025,
+            "pdt": 0.00001
+        },
+        {
+            "p_sted": 0.12,
+            "p_ex": 0.000002,
+            "lower_threshold": 3,
+            "upper_threshold": 10,
+            "decision_time": 0.0000025,
+            "pdt": 0.00001
+        }
+    ]
+}

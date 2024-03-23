@@ -1,0 +1,51 @@
+_BASE_: BASE_config.yml
+save_folder: ../data/contextual-image
+ctx_opts:
+  mode: image
+regressor_args:
+  Bleach:
+    _lambda: 0.1
+    nu: 0.25
+  Resolution:
+    _lambda: 0.1
+    nu: 0.25
+    min_features:
+      - 40.
+    max_features:
+      - 250.
+  SNR:
+    _lambda: 0.1
+    nu: 0.25
+  Squirrel:
+    _lambda: 0.1
+    nu: 0.25
+  FFTMetric:
+    _lambda: 0.1
+    nu: 0.25
+  Crosstalk:
+    _lambda: 0.1
+    nu: 0.25
+  default:
+    share_ctx: True
+    pretrained_opts:
+        udpate: False
+        path: C:\Development\FlavieAI\optim-sted\abberior\pretrained\20221215-083331_7b6ec0a2_DyMIN_None_ContextualImageLinTSDiag
+        load_all: False
+        trial: 0
+        use: False
+    teacher_opts:
+        use: False
+        alpha: 1.0e-3
+    every-step-decision: False
+    ctx_features: 1
+    n_features: 7
+    n_hidden_dim: 32
+    _lambda: 0.0001
+    nu: 0.01
+    learning_rate: 1.0e-3
+    min_features:
+      - 0.
+    max_features:
+      - 1.0
+    update_exploration: false
+regressor_name: ContextualImageLinTSDiag

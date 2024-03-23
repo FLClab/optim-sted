@@ -1,0 +1,2849 @@
+AOM-Controller:
+  IsActive: 0
+  is_active: false
+  prop_driver: Virtual Device
+  prop_version: 0
+Exc_405:
+  IsActive: 0
+  is_active: false
+  laser_on: true
+  modulation:
+    analog: false
+    digital: true
+    onoff: false
+  power: 0.0
+  prop_driver: Cobolt Laser
+  prop_version: 0
+ExpControl:
+  IsActive: 0
+    directio:
+    aoaux:
+    - 0.0
+    - 0.0
+    - 0.0
+    - -0.0
+    doaux:
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+  external_stream_active: false
+  is_active: true
+  measurement:
+    allow_custom_phase_patterns: false
+    channels:
+    - detsel:
+        detector: DET3
+        gain:
+          calibrated: 0.0
+          calibration_used: ''
+          raw: 0.0
+          units_used: ''
+        spectral_range:
+          center: 6.85e-07
+          max: 7.2e-07
+          min: 6.5e-07
+          width: 7.0e-08
+        warnings: ''
+      dwelltime: 1.0e-05
+      frame_mask:
+        active: false
+        algorithm: 0
+        invert: false
+        stack: 0
+        value: 0
+      gating:
+        active: false
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 8.0e-09
+      id: cfe64476-154e-4f81-816e-c834187401e3
+      lasers:
+      - active: false
+        id: LAS0
+        power:
+          calibrated: 0.0
+          calibration_used: ''
+          raw: 0.0
+          units_used: ''
+        warnings: ''
+      - active: false
+        id: LAS1
+        power:
+          calibrated: 100.0
+          calibration_used: Exc_488
+          raw: 5.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS2
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_518
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS4
+        power:
+          calibrated: 100.0
+          calibration_used: Exc_561
+          raw: 2.4
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS3
+        power:
+          calibrated: 0.0
+          calibration_used: STED_595
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: true
+        id: LAS5
+        power:
+          calibrated: 10.0
+          calibration_used: Exc_640
+          raw: 1.20389016018
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS6
+        power:
+          calibrated: 0.0
+          calibration_used: STED_775
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      name: CONF 640
+      rescue:
+        LTh_auto: true
+        LTh_num_times: 1
+        LTh_thresholds:
+        - 20
+        - 0
+        - 0
+        - 0
+        LTh_times:
+        - 100.0
+        - 0.0
+        - 0.0
+        - 0.0
+        UTh_auto: true
+        UTh_threshold: 53817
+        blank_if_higher: false
+        is_pmt: false
+        probe_channel: ''
+        probe_mode: 2
+        rescue_allowed: true
+        rescue_mode: 4
+        signal_level: 20.0
+        strength: 5.0
+        warnings: ''
+      steps:
+        __cache__:
+          __array__: null
+          __loaded__: ''
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__:
+          - __value__:
+            - 1
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            - 0
+            __vname__: _
+          __loaded__: _
+        allow_per_linestep_config: false
+        linestep_active:
+        - 1
+        - 0
+        - 0
+        - 0
+        - 1
+        - 1
+        - 1
+        - 1
+        pixelstep_active:
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        step_state:
+        - - 1
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      tcspc:
+        flim_beg: 0.0
+        flim_len: 0.0
+        flim_len_used: 0.0
+        flim_mode: 0
+        flim_psz: 0.0
+        flim_psz_used: 0.0
+        flim_res: 2
+        flim_res_used: 0
+        flim_sync_histograms: true
+        include_preceding_rise_times: true
+        mc_mask: sum
+        stream: fpga
+    - detsel:
+        detector: DET3
+        gain:
+          calibrated: 0.0
+          calibration_used: ''
+          raw: 0.0
+          units_used: ''
+        spectral_range:
+          center: 6.85e-07
+          max: 7.2e-07
+          min: 6.5e-07
+          width: 7.0e-08
+        warnings: ''
+      dwelltime: 2.0e-05
+      frame_mask:
+        active: false
+        algorithm: 0
+        invert: false
+        stack: 0
+        value: 0
+      gating:
+        active: true
+        delay: 7.5e-10
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+        width: 8.0e-09
+      id: 312caf88-dd1f-4945-ae32-311ccb7b67ac
+      lasers:
+      - active: false
+        id: LAS0
+        power:
+          calibrated: 0.0
+          calibration_used: ''
+          raw: 0.0
+          units_used: ''
+        warnings: ''
+      - active: false
+        id: LAS1
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_488
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS2
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_518
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS4
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_561
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS3
+        power:
+          calibrated: 0.0
+          calibration_used: STED_595
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: true
+        id: LAS5
+        power:
+          calibrated: 10.0
+          calibration_used: Exc_640
+          raw: 1.20389016018
+          units_used: '%'
+        warnings: ''
+      - active: true
+        id: LAS6
+        power:
+          calibrated: 6.0
+          calibration_used: STED_775
+          raw: 0.995833333333
+          units_used: '%'
+        warnings: ''
+      name: EXCL 640
+      rescue:
+        LTh_auto: true
+        LTh_num_times: 4
+        LTh_thresholds:
+        - 1
+        - 2
+        - 5
+        - 10
+        LTh_times:
+        - 21.9
+        - 29.3
+        - 53.1
+        - 86.8
+        UTh_auto: true
+        UTh_threshold: 11
+        blank_if_higher: false
+        is_pmt: false
+        probe_channel: cfe64476-154e-4f81-816e-c834187401e3
+        probe_mode: 2
+        rescue_allowed: true
+        rescue_mode: 5
+        signal_level: 20.0
+        strength: 5.0
+        warnings: ''
+      steps:
+        __cache__:
+          __array__: null
+          __loaded__: ''
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__:
+          - __value__:
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            __vname__: _
+          __loaded__: _
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 1
+        - 0
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        pixelstep_active:
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        step_state:
+        - - 0
+          - 1
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      tcspc:
+        flim_beg: 0.0
+        flim_len: 0.0
+        flim_len_used: 0.0
+        flim_mode: 0
+        flim_psz: 0.0
+        flim_psz_used: 0.0
+        flim_res: 2
+        flim_res_used: 0
+        flim_sync_histograms: true
+        include_preceding_rise_times: true
+        mc_mask: sum
+        stream: fpga
+    - detsel:
+        detector: DET3
+        gain:
+          calibrated: 0.0
+          calibration_used: ''
+          raw: 0.0
+          units_used: ''
+        spectral_range:
+          center: 6.85e-07
+          max: 7.2e-07
+          min: 6.5e-07
+          width: 7.0e-08
+        warnings: ''
+      dwelltime: 3.0e-05
+      frame_mask:
+        active: false
+        algorithm: 0
+        invert: false
+        stack: 0
+        value: 0
+      gating:
+        active: true
+        delay: 7.5e-10
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+        width: 8.0e-09
+      id: bbc355d0-4879-4633-8ea8-fee779458fa5
+      lasers:
+      - active: false
+        id: LAS0
+        power:
+          calibrated: 0.0
+          calibration_used: ''
+          raw: 0.0
+          units_used: ''
+        warnings: ''
+      - active: false
+        id: LAS1
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_488
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS2
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_518
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS4
+        power:
+          calibrated: 0.0
+          calibration_used: Exc_561
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: false
+        id: LAS3
+        power:
+          calibrated: 0.0
+          calibration_used: STED_595
+          raw: 0.0
+          units_used: '%'
+        warnings: ''
+      - active: true
+        id: LAS5
+        power:
+          calibrated: 10.0
+          calibration_used: Exc_640
+          raw: 1.20389016018
+          units_used: '%'
+        warnings: ''
+      - active: true
+        id: LAS6
+        power:
+          calibrated: 10.0
+          calibration_used: STED_775
+          raw: 1.21286681716
+          units_used: '%'
+        warnings: ''
+      name: STED 640
+      rescue:
+        LTh_auto: true
+        LTh_num_times: 2
+        LTh_thresholds:
+        - 0
+        - 0
+        - 0
+        - 0
+        LTh_times:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        UTh_auto: true
+        UTh_threshold: 53817
+        blank_if_higher: false
+        is_pmt: false
+        probe_channel: 312caf88-dd1f-4945-ae32-311ccb7b67ac
+        probe_mode: 2
+        rescue_allowed: true
+        rescue_mode: 0
+        signal_level: -0.0
+        strength: 5.0
+        warnings: ''
+      steps:
+        __cache__:
+          __array__: null
+          __loaded__: ''
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__:
+          - __value__:
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            - 1
+            __vname__: _
+          __loaded__: _
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 0
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        - 1
+        pixelstep_active:
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        step_state:
+        - - 0
+          - 0
+          - 1
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      tcspc:
+        flim_beg: 0.0
+        flim_len: 0.0
+        flim_len_used: 0.0
+        flim_mode: 0
+        flim_psz: 0.0
+        flim_psz_used: 0.0
+        flim_res: 2
+        flim_res_used: 0
+        flim_sync_histograms: true
+        include_preceding_rise_times: true
+        mc_mask: sum
+        stream: fpga
+    delay_correction_delta: 5.0e-10
+    detectors:
+    - active: false
+      gain:
+        calibrated: 0.0
+        calibration_used: ''
+        raw: 0.0
+        units_used: ''
+      id: DET0
+      spectral_range:
+        center: 5.09e-07
+        max: 5.2e-07
+        min: 4.98e-07
+        width: 2.2e-08
+    - active: false
+      gain:
+        calibrated: 0.0
+        calibration_used: ''
+        raw: 0.0
+        units_used: ''
+      id: DET1
+      spectral_range:
+        center: 5.455e-07
+        max: 5.58e-07
+        min: 5.33e-07
+        width: 2.5e-08
+    - active: false
+      gain:
+        calibrated: 0.0
+        calibration_used: ''
+        raw: 0.0
+        units_used: ''
+      id: DET2
+      spectral_range:
+        center: 6.15e-07
+        max: 6.25e-07
+        min: 6.05e-07
+        width: 2.0e-08
+    - active: true
+      gain:
+        calibrated: 0.0
+        calibration_used: ''
+        raw: 0.0
+        units_used: ''
+      id: DET3
+      spectral_range:
+        center: 6.85e-07
+        max: 7.2e-07
+        min: 6.5e-07
+        width: 7.0e-08
+    - active: false
+      gain:
+        calibrated: 0.0
+        calibration_used: AI PMT 0-1V
+        raw: 0.0
+        units_used: '%'
+      id: DET4
+      spectral_range:
+        center: 6.85e-07
+        max: 7.2e-07
+        min: 6.5e-07
+        width: 7.0e-08
+    gatechan_monitors: null
+    ignore_laser_power_setpoints: false
+    intermediate_image_mode: false
+    lasers:
+    - active: false
+      bandpass:
+        force_active: false
+      id: LAS0
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 0.0
+        calibration_used: ''
+        raw: 0.0
+        units_used: ''
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 0
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 0
+        mode_r: 0
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+    - active: false
+      bandpass:
+        force_active: false
+      id: LAS1
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 100.0
+        calibration_used: Exc_488
+        raw: 5.0
+        units_used: '%'
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 0
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 0
+        mode_r: 0
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+    - active: false
+      bandpass:
+        force_active: false
+      id: LAS2
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 0.0
+        calibration_used: Exc_518
+        raw: 0.0
+        units_used: '%'
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 0
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 0
+        mode_r: 0
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+    - active: false
+      bandpass:
+        force_active: false
+      id: LAS4
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 100.0
+        calibration_used: Exc_561
+        raw: 2.4
+        units_used: '%'
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 0
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 0
+        mode_r: 0
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+    - active: false
+      bandpass:
+        force_active: false
+      id: LAS3
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 0.0
+        calibration_used: STED_595
+        raw: 0.0
+        units_used: '%'
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 0
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 3
+        mode_r: 1
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+    - active: true
+      bandpass:
+        force_active: false
+      id: LAS5
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 10.0
+        calibration_used: Exc_640
+        raw: 1.20389016018
+        units_used: '%'
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 1
+        - 1
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 2
+          - 2
+          - 2
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 0
+        mode_r: 0
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+    - active: true
+      bandpass:
+        force_active: false
+      id: LAS6
+      polarization:
+        angle: 0.0
+        type: 1
+      power:
+        calibrated: 10.0
+        calibration_used: STED_775
+        raw: 1.21286681716
+        units_used: '%'
+      steps:
+        __ls_cache__:
+          __array__: null
+          __loaded__: ''
+        __ps_cache__:
+          __array__: null
+          __loaded__: ''
+        allow_per_linestep_config: false
+        linestep_active:
+        - 0
+        - 1
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        pixelstep_active:
+        - 3
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        - -1
+        step_state:
+        - - 0
+          - 2
+          - 2
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+      three_d:
+        mode_l: 3
+        mode_r: 1
+        power_dist: 0.0
+      timing:
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+    line_steps:
+      __cache__:
+        __array__: null
+        __loaded__: ''
+      active: true
+      interleave: false
+      repetitions: 1
+      repetitions_used: 1
+      rise_times: null
+      step_active:
+      - true
+      - true
+      - true
+      - false
+      - false
+      - false
+      - false
+      - false
+      step_duration:
+      - 1
+      - 2
+      - 3
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      total: 6
+    num_pulse_steps: 4
+    pixel_steps:
+      __cache__:
+        __array__:
+        - __value__:
+            rise_times:
+            - 1.0e-07
+            - 0.0
+            - 0.0
+            - 0.0
+            - 0.0
+            - 0.0
+            - 0.0
+            - 0.0
+            step_active:
+            - true
+            - false
+            - false
+            - false
+            - false
+            - false
+            - false
+            - false
+            step_duration:
+            - 1.0e-05
+            - 1.0e-06
+            - 1.0e-06
+            - 1.0e-06
+            - 1.0e-06
+            - 1.0e-06
+            - 1.0e-06
+            - 1.0e-06
+            total: 1.0e-05
+          __vname__: _
+        __loaded__: _
+      active: false
+      interleave: false
+      repetitions: 1
+      repetitions_used: 1
+      rise_times:
+      - 1.0e-07
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.0
+      step_active:
+      - true
+      - false
+      - false
+      - false
+      - false
+      - false
+      - false
+      - false
+      step_duration:
+      - 1.0e-05
+      - 1.0e-06
+      - 1.0e-06
+      - 1.0e-06
+      - 1.0e-06
+      - 1.0e-06
+      - 1.0e-06
+      - 1.0e-06
+      total: 1.0e-05
+    pulse_steps_required: false
+    streams:
+    - active: false
+      id: Tagger
+      stream_to_disk: false
+      timing:
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+    sync_source:
+      expected_frequency: 40000368.1818
+      frequency: 40000000.0
+      master: internal
+                            use_photon_stream: false
+  prop_driver: AIFpgaV3 Driver
+  prop_version: 9
+  scan:
+    line_frequency: 460.511167396
+    range:
+      coarse_x:
+        g_off: 0.00115758
+        keep_pixel_size: true
+        len: 1.0e-05
+        'off': 0.0
+        psz: 1.953125e-08
+        res: 512
+        res_used: 0
+      coarse_y:
+        g_off: -0.00249212
+        keep_pixel_size: true
+        len: 1.0e-05
+        'off': 0.0
+        psz: 1.953125e-08
+        res: 512
+        res_used: 0
+      coarse_z:
+        g_off: 2.3072e-06
+        keep_pixel_size: true
+        len: 1.0e-05
+        'off': 0.0
+        psz: 1.953125e-08
+        res: 512
+        res_used: 0
+      delay_adjustment: 0.0
+      elliptical: false
+      external_scan:
+        blank_flyback: false
+        disable_fir_filter: false
+        enable: false
+        flyback_time: 0.001
+      fast_scan:
+        active: false
+        duty_cycle: 95.0
+      keep_pixel_size: true
+      lambda:
+        bandpass_auto: true
+        bandpass_width: 2.5e-08
+        beg: 4.0e-07
+        end: 8.0e-07
+        g_off: 0.0
+        keep_pixel_size: false
+        len: 4.0e-07
+        'off': 6.0e-07
+        psz: 2.5e-08
+        res: 16
+        res_used: 16
+      lock_aspect_ratio: false
+      magnification: 100.0
+      orientation:
+      - 0.0
+      - 0.0
+      - 0.0
+      scanmode: xy
+      square_pixels: true
+      stepwise_scan:
+        auto: false
+        lines: false
+        pixels: false
+      t:
+        g_off: 0.0
+        keep_pixel_size: true
+        len: 1.0e-05
+        'off': 0.0
+        psz: 1.953125e-08
+        res: 512
+        res_used: 512
+      warnings: ''
+      x:
+        g_off: 0.0
+        keep_pixel_size: true
+        len: 2.64e-06
+        'off': -1.75999991825e-06
+        psz: 2.0e-08
+        res: 132
+        res_used: 132
+      y:
+        g_off: 0.0
+        keep_pixel_size: true
+        len: 2.56e-06
+        'off': 3.99999748879e-08
+        psz: 2.0e-08
+        res: 128
+        res_used: 128
+      z:
+        g_off: 0.0
+        keep_pixel_size: true
+        len: 2.05e-06
+        'off': 0.0
+        psz: 5.0e-08
+        res: 41
+        res_used: 41
+  simulation:
+    ai:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    ctrs:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    sync:
+    - 0.0
+    - 0.0
+  timing:
+    debug_calib:
+      cascade_taps:
+      - 46
+      - 47
+      - 47
+      - 46
+      - 46
+      - 45
+      - 46
+      - 46
+      - 48
+      - 45
+      - 48
+      - 45
+      - 48
+      - 46
+      - 48
+      predelay: 0
+      predelay_taps:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      register_50MHz_at_outputs: false
+      send_50MHz_to_inputs: false
+      set_individual_predelay_taps: false
+      use_raw_cascade_taps: false
+    ext_frequencies:
+    - 40000368.1818
+    - 40000000.0
+    gatechan_monitors: null
+    gating_channels:
+    - actual_delay: 1.6796875e-09
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 7.96875e-09
+      cascade_delay_end: 0.0
+      connector: 3
+      gating:
+        active: false
+        delay: 2.515e-08
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 8.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 2.58674176115e-08
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 8.0e-09
+      cascade_delay_end: 5.60546875e-08
+      connector: 3
+      gating:
+        active: true
+        delay: 2.59e-08
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+        width: 8.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 133
+      taps_end: 228
+      warnings: ''
+    - actual_delay: 4.07421875e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.484375e-09
+      cascade_delay_end: 4.22265625e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 2.58674176115e-08
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 8.03125e-09
+      cascade_delay_end: 5.57734375e-08
+      connector: 3
+      gating:
+        active: true
+        delay: 2.59e-08
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+        width: 8.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 140
+      taps_end: 232
+      warnings: ''
+    - actual_delay: 4.07421875e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 9.375e-10
+      cascade_delay_end: 4.16796875e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.11484375e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 9.0625e-10
+      cascade_delay_end: 4.20546875e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.10078125e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.109375e-09
+      cascade_delay_end: 4.21171875e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.10546875e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.3125e-09
+      cascade_delay_end: 4.23671875e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.07578125e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 8.125e-10
+      cascade_delay_end: 4.15703125e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.08203125e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.546875e-09
+      cascade_delay_end: 4.23671875e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.12421875e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 7.34375e-10
+      cascade_delay_end: 4.19765625e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.07265625e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.03125e-09
+      cascade_delay_end: 4.17578125e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.14296875e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.21875e-09
+      cascade_delay_end: 4.26484375e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.12421875e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 9.6875e-10
+      cascade_delay_end: 4.22109375e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.13984375e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 1.578125e-09
+      cascade_delay_end: 4.29765625e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.14140625e-08
+      actual_pulse_sequence:
+      - false
+      - false
+      - false
+      - false
+      actual_width: 8.125e-10
+      cascade_delay_end: 4.22265625e-08
+      connector: 7
+      gating:
+        active: true
+        delay: 0.0
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: true
+        width: 8.0e-09
+      ignore_calib: true
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    gating_inputs:
+    - invert: false
+    - invert: false
+    - invert: false
+    - invert: false
+    - invert: false
+    - invert: false
+    - invert: false
+    - invert: false
+    ignore_calib_for_all: false
+    manual: false
+    pulse_channels:
+    - actual_delay: 1.99609375e-08
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 9.53125e-09
+      cascade_delay_end: 0.0
+      connector: 0
+      gating:
+        active: false
+        delay: 2.0e-08
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 9.55e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 7.8125e-12
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 8.0e-09
+      cascade_delay_end: 0.0
+      connector: 1
+      gating:
+        active: false
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 8.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 4.11764772304e-09
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 8.96875e-09
+      cascade_delay_end: 6.01953125e-08
+      connector: 3
+      gating:
+        active: false
+        delay: 4.15e-09
+        steps:
+        - false
+        - false
+        - false
+        - false
+        use_steps: false
+        width: 8.95e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 2.06642926115e-08
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 7.96875e-09
+      cascade_delay_end: 5.10546875e-08
+      connector: 4
+      gating:
+        active: true
+        delay: 2.07e-08
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 8.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 6
+      taps_end: 97
+      warnings: ''
+    - actual_delay: 2.34375e-11
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 9.84375e-10
+      cascade_delay_end: 0.0
+      connector: 0
+      gating:
+        active: false
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 1.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: -3.90625e-11
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 9.84375e-10
+      cascade_delay_end: 0.0
+      connector: 0
+      gating:
+        active: false
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 1.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: -2.34375e-11
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 1.0e-09
+      cascade_delay_end: 0.0
+      connector: 0
+      gating:
+        active: false
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 1.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    - actual_delay: 7.8125e-12
+      actual_pulse_sequence:
+      - true
+      - true
+      - true
+      - true
+      actual_width: 1.0e-09
+      cascade_delay_end: 0.0
+      connector: 0
+      gating:
+        active: false
+        delay: 0.0
+        steps:
+        - true
+        - true
+        - true
+        - true
+        use_steps: false
+        width: 1.0e-09
+      ignore_calib: false
+      period_enable_beg: 0
+      period_enable_end: 0
+      taps_beg: 0
+      taps_end: 0
+      warnings: ''
+    pulse_outputs:
+    - enable_signal: 0
+      invert: false
+    - enable_signal: 0
+      invert: false
+    - enable_signal: 0
+      invert: false
+    - enable_signal: 0
+      invert: false
+    - enable_signal: 517
+      invert: false
+    - enable_signal: 0
+      invert: false
+    - enable_signal: 0
+      invert: false
+    - enable_signal: 0
+      invert: false
+    sync_source:
+      auto_enable_sync_inputs: true
+      auto_set_divider: true
+      base_frequency: 200000000.0
+      delay: 0.0
+      divider: 5
+      enabled_sync_inputs: 1
+      frequency: 40000000.0
+      input: 0
+      invert: false
+      manual_internal_clock_config: false
+  trigger:
+            frametrig_use: false
+Laser_Rack_Fans:
+  IsActive: 0
+  is_active: false
+  prop_driver: Virtual Device
+  prop_version: 0
+MRS_595:
+  IsActive: 0
+  is_active: false
+  prop_driver: SK Advanced MRS Driver
+  prop_version: 2
+  stage_position: 0.0
+MRS_775:
+  IsActive: 0
+  is_active: false
+  prop_driver: SK Advanced MRS Driver
+  prop_version: 2
+  stage_position: 0.0
+Measurement:
+  MeasTime: Tuesday, July 20 2021  08:21:48
+  axes:
+    bidirectional_scan: false
+    concatenate: false
+    num_synced: 2
+    permanent_add: false
+    resume_position: 0
+    rewind_axis: 0
+    scan_axes:
+    - ExpControl X
+    - ExpControl Y
+    - None
+    - None
+    split_axis: 1
+    split_num_steps: 1
+    split_type: 0
+    update_axis: 0
+    update_step: 1
+  propset_id: 0
+  propset_label: meas01
+MultiIO:
+  IsActive: 0
+  ao:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.002
+  - 0.0
+  - 0.0
+  - 0.0
+  - 4.6
+  - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+  dio:
+  - true
+  - false
+  - true
+  - false
+  - false
+  - true
+  - true
+  - true
+  is_active: false
+  prop_driver: Redlab Driver
+  prop_version: 0
+OlympusIX:
+  IsActive: 0
+  is_active: true
+  light_path:
+    aux_deck:
+      mirror: none::none::2
+      shutter: true
+    main_deck:
+      mirror: none::none::2
+      shutter: true
+    objlens: 100X_NA1.4_oil_UPLSAPO100XO
+    trans_illum: 0.0
+    trans_illum_shutter: true
+    viewport: 1
+  prop_driver: Olympus IX83/BX63 Microscope
+  prop_version: 2
+  scanrange:
+    z:
+      g_off: 2.3072e-06
+      len: 2.05e-06
+      'off': -0.0
+      z-stabilizer:
+        enabled: true
+  stage:
+    pos_x: 0.00115758
+    pos_y: -0.00249212
+Pellicle:
+  IsActive: 0
+  is_active: true
+  pos_measurement: 0
+  prop_driver: Thorlabs MFF001 Flipper
+  prop_version: 0
+Pinhole:
+  IsActive: 0
+  is_active: true
+  pinhole_size: -1.0
+  prop_driver: Thorlabs MPH16 Pinhole
+  prop_version: 2
+  size_used: 5.0e-05
+  size_used_au: 1
+  wheel_position: 9895
+PowerSwitch:
+  IsActive: 0
+  is_active: false
+  prop_driver: Powerswitch driver
+  prop_version: 0
+Pulsed_Laser_Module:
+  IsActive: 0
+  is_active: false
+  prop_driver: Virtual Device
+  prop_version: 0
+Rack_Fans:
+  IsActive: 0
+  is_active: false
+  prop_driver: Virtual Device
+  prop_version: 0
+SLM_595:
+  IsActive: 0
+  disable_aberration_correction: false
+  is_active: false
+  pattern_offsets:
+    defocus: 0.0
+    spherical_aberation_1: 0.0
+  prop_driver: Hamamatsu SLM Driver
+  prop_version: 1
+SLM_775:
+  IsActive: 0
+  disable_aberration_correction: false
+  is_active: false
+  pattern_offsets:
+    defocus: 0.0
+    spherical_aberation_1: 0.0
+  prop_driver: Hamamatsu SLM Driver
+  prop_version: 1
+STED_775:
+  IsActive: 0
+  is_active: false
+  laser_on: true
+  power: 1.25
+  prop_driver: MPB Laser
+  prop_version: 0
+Sync:
+  BinsLeft: 0
+  BinsRight: 0
+  DwellTime: 1.0
+  Invert0: 0
+  Invert1: 0
+  Invert2: 0
+  Invert3: 0
+  IsActive: 0
+  Len0: 1.0
+  Len1: 1.0
+  Len2: 1.0
+  ManualAxis: 0
+  ManualCycle: 0
+  ManualLabels: ''
+  Master: 0
+  Res0: 1
+  Res1: 1
+  Res2: 1
+  Syncax0: 0
+  Syncax1: 0
+  Syncax2: 0
+  Syncax3: 0
+  TTLWait: 0.0
+  TTLWaitFinal: 0.0
+  TTLWaitFinalAfter: 0.0
+  TTLafter: ''
+  TTLstr: '>0 - 0 - 0 - 0 - h1,l1 - 0::>0 - 0 - 0 - 0 - h1,l1 - 0'
+  Timeout: 0
+  is_active: false
+  prop_driver: SyncDriver Driver
+  prop_version: 0
+System_Status:
+  IsActive: 0
+  is_active: true
+  prop_driver: Interlock module
+  prop_version: 0
+Tagger:
+  IsActive: 0
+  data:
+    streaming:
+      enable: false
+  is_active: false
+  prop_driver: Swabian Instruments TimeTagger
+  prop_version: 0
+  simulation:
+    markers:
+    - 0
+    - -1
+    - -1
+    - -1
+    - -1
+    - -1
+    markers_auto: false
+    rates:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+TimeLapse:
+  IsActive: 0
+  enabled: false
+  ignore_overflow: false
+  is_active: false
+  prop_driver: Timer Driver
+  prop_version: 4
+  sequence:
+    list: ''
+    use: false
+  t_axis:
+    g_off: 0.0
+    keep_pixel_size: true
+    len: 0.0
+    'off': 0.0
+    psz: 0.0
+    res: 1
+    res_used: 1
+  wait_before_restart: false
+easyCommander:
+  IsActive: 0
+  easyz:
+    actions:
+      set_first_plane: null
+      set_last_plane: null
+    first_plane: 0.0
+    last_plane: 0.0
+    lock_zrange: false
+  easyz_active: false
+  is_active: false
+  lock_sted_res: false
+  meas_config:
+    dye_steps:
+    - conf_enabled: true
+      dye: STAR 635P
+      dymin_enabled: true
+      dymin_exclusion: 20.0
+      dymin_level: 20.0
+      exc_power: 10.0
+      probe_enabled: true
+      probe_level: 20.0
+      rescue_enabled: false
+      rescue_level: 20.0
+      sted_enabled: true
+      sted_linesteps: 3
+      sted_res: 10.0
+    - conf_enabled: false
+      dye: ''
+      dymin_enabled: false
+      dymin_exclusion: 20.0
+      dymin_level: 20.0
+      exc_power: 0.0
+      probe_enabled: false
+      probe_level: 20.0
+      rescue_enabled: false
+      rescue_level: 20.0
+      sted_enabled: false
+      sted_linesteps: 3
+      sted_res: 0.0
+    - conf_enabled: false
+      dye: ''
+      dymin_enabled: false
+      dymin_exclusion: 20.0
+      dymin_level: 20.0
+      exc_power: 0.0
+      probe_enabled: false
+      probe_level: 20.0
+      rescue_enabled: false
+      rescue_level: 20.0
+      sted_enabled: false
+      sted_linesteps: 3
+      sted_res: 0.0
+    - conf_enabled: false
+      dye: ''
+      dymin_enabled: false
+      dymin_exclusion: 20.0
+      dymin_level: 20.0
+      exc_power: 0.0
+      probe_enabled: false
+      probe_level: 20.0
+      rescue_enabled: false
+      rescue_level: 20.0
+      sted_enabled: false
+      sted_linesteps: 3
+      sted_res: 0.0
+    power_dist: 0.0
+  prop_driver: EasyCommander
+  prop_version: 1
+  warnings:
+    reset: null
+    text: ''
+    warnings: ''
+prop_version: 2
+spec_version: 16.3.13800-w2119-timetagger-nw
