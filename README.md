@@ -1,8 +1,8 @@
+# Optim-STED
+
 <a target="_blank" href="https://colab.research.google.com/drive/128pOe4KwnZ7MH6HFcd-mG1HjwDWvohnq?usp=sharing">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
-
-# Optim-STED
 
 Welcome to Optim-STED! This project aims to optimize the performance of stimulated emission depletion (STED) microscopy.
 
