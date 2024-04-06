@@ -11,7 +11,7 @@ setup(
         "abberior-sted",
         "h5py",
         "pyyaml",
-        "metrics @ git+ssh://git@github.com/FLClab/metrics.git",
+        "metrics @ git+https://github.com/FLClab/metrics.git",
         "numpy",
         "matplotlib",
         "torch",
