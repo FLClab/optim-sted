@@ -1,4 +1,5 @@
 
+from setuptools import find_packages
 from distutils.core import setup
 
 setup(
@@ -22,5 +23,6 @@ setup(
     extras_require={
     "server": ["dash", "plotly", "dash_bootstrap_components", "dash_renderjson"],
     },
-    packages=["stedopt", "stedopt.server"],
+    packages=find_packages(include=["stedopt", "stedopt.*", "stedopt.server"]),
+    include_package_data=True,
 )
