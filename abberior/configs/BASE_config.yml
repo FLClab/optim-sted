@@ -76,7 +76,7 @@ obj_normalization:
     min: 0
 optim_length: 50
 params_conf:
-  p_ex: 8.
+  p_ex: 2.
   pdt: 10.0e-6
 pareto_opts:
   mode: nsga

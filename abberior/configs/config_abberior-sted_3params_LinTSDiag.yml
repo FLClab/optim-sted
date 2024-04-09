@@ -1,6 +1,8 @@
 _BASE_:
 - BASE_config_abberior-sted.yml
 - BASE_config_LinTSDiag.yml
+ctx_opts:
+  use_ctx: false
 nbre_trials: 1
 obj_names:
 - Resolution

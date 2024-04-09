@@ -36,11 +36,11 @@ from stedopt.defaults import obj_dict, regressors_dict
 
 import defaults
 
-PATH = os.path.join(
-    "C:", os.sep, "Users", "abberior", "Desktop", "DATA", "abilodeau",
-    "20230915_STED-optim"
-)
-# PATH = os.path.join(os.getcwd(), "data", "20230914_STED-optim")
+# PATH = os.path.join(
+#     "C:", os.sep, "Users", "abberior", "Desktop", "DATA", "abilodeau",
+#     "20230409_STED-optim"
+# )
+PATH = os.path.join(os.getcwd(), "data", "20230409_STED-optim")
 
 # PATH = "../data/abberior"
 SAVE = True
@@ -229,7 +229,8 @@ def run_TS(config, prefart="random", restore_folder=None, dry_run=False, verbose
                 # Extract context from the last acquired confocal image
                 fg_c = utils.get_foreground(conf2)
                 context = context_handler(conf2, fg_c)
-                history["ctx"].append(numpy.array([context]))
+                if context_handler.use_ctx:
+                    history["ctx"].append(numpy.array([context]))
 
                 if n == 0:
                     X, y_samples, points_arr2d, timesperpixel, ndf = pareto_sampler(
