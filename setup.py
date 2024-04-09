@@ -21,7 +21,7 @@ setup(
         "umap-learn",
     ],
     extras_require={
-    "server": ["dash", "plotly", "dash_bootstrap_components", "dash_renderjson"],
+    "server": ["dash", "plotly", "dash_bootstrap_components", "dash_renderjson", "dash_mantine_components"],
     },
     packages=find_packages(include=["stedopt", "stedopt.*", "stedopt.server"]),
     include_package_data=True,

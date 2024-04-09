@@ -28,7 +28,7 @@ pip install <PATH>/specpy-1.2.3-cp39-cp39-win_amd64.whl
 Run code example
 ```bash
 cd optim-sted/abberior
-python run.py --config ./configs/config_abberior-dymin_7params_random.yml --dry-run
+python run.py --config ./configs/config_abberior-sted_3params_LinTSDiag.yml --prefart optim
 ```
 
 ## Slurm Installation
