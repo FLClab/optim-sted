@@ -1,4 +1,4 @@
-# Contextual-Bandit optimization for STED microscopy
+# Optimization for STED microscopy
 
 This folder contains the code to optimize the performance of stimulated emission depletion (STED) microscopy using a bandit or contextual-bandit algorithm on a real STED microscope.
 
@@ -36,7 +36,7 @@ The experiment configuration file is a YAML file that contains the configuration
 
 ## Microscope defaults
 
-The `MicroscopeConfigurator` requires to set the default values of each microscope modalities. This is handled by modifying the values contained in `default/Abberior<MODALITY>.py`. This file defines the name of the parameters than can be optimized and how they are modified on the real microscope using `functools.partial`.
+The `MicroscopeConfigurator` requires to set the default values of each microscope modalities. This is handled by modifying the values contained in `defaults/Abberior<MODALITY>.py`. This file defines the name of the parameters than can be optimized and how they are modified on the real microscope using `functools.partial`.
 
 Other modalities or functions can be implemented if required.
 
@@ -59,3 +59,10 @@ This file handles the optimization of 3D acquisitions. Currently, the imaging ob
 ### `run-manual.py`
 
 This file does not use the bandit optimization framework to optimize the microscopy task. All parameters are selected by the microscopist. 
+
+## Video tutorial
+
+We provide a video tutorial that goes through the steps required to install and run an experiment. Click on the image below.
+
+[![Watch the video](https://img.youtube.com/vi/hRf7IOSGxF4/hqdefault.jpg)](https://www.youtube.com/watch?v=hRf7IOSGxF4)
+
