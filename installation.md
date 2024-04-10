@@ -15,7 +15,7 @@ git clone https://github.com/FLClab/optim-sted.git
 
 Install a local version of the package
 ```bash
-pip install ./optim-sted
+pip install -e ./optim-sted
 ```
 
 ## Abberior Microscope
