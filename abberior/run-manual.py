@@ -214,7 +214,9 @@ def run_TS(config, save_folder=PATH, regressor_name="sklearn_BayesRidge",
         defaults, microscope_conf, params_conf, default_values_dict, ndims, param_names,
         config_conf, config_sted
     )
-    region_selector = RegionSelector(config_overview)
+    region_selector = RegionSelector(
+        config_overview, config=config.region_opts
+    )
     point_selector = PointSelector(param_names, param_space_bounds, obj_names)
 
     # Iterates across the selected number of trials

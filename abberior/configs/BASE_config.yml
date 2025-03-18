@@ -16,6 +16,9 @@ ctx_opts:
   ctx_x_mins:
   - 0.
   mode: quantile
+region_opts:
+  mode: manual
+  overview: 640
 default_values_dict:
   num_acquisition: 1
   imagesize:

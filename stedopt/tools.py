@@ -15,7 +15,7 @@ from matplotlib import pyplot
 from collections import defaultdict
 from skimage import filters, transform
 
-from abberior import microscope, user
+from abberior import microscope, user, utils
 from banditopt.utils import bigger_than, get_foreground
 
 from .experiment import Experiment
@@ -1065,6 +1065,54 @@ class MicroscopeConfigurator:
         microscope.set_LTh_auto(self.config_sted, value=True, channel_id=1)
         microscope.set_UTh_auto(self.config_sted, value=True, channel_id=1)
 
+def get_user_input(question, expected_answers):
+    if not question.endswith(" "):
+        question += " "
+    answer = input(question)
+    while answer not in expected_answers:
+        answer = input(question)
+    return answer
+
+def wait_for_user_to_annotate_image(image):
+    print("Annotate the image in the napari plugin...")
+    print("The image is located at: ", image)
+    get_user_input("Once you are done, press 'q' to continue.", ["q"])
+
+def wait_for_drag_and_drop_annotation_path():
+    print("Drag and drop the image you want to annotate here.")
+    path = input()
+    print(path)
+    return path
+
+def load_annotations_and_ask_which_ids_to_keep(path):
+    annotation = tifffile.imread(path)
+    uniques = numpy.unique(annotation)
+    uniques = [str(u) for u in uniques]
+    print("The unique values in the annotation are: ", uniques)
+    keep = int(get_user_input("Which labels do you want to keep? ", uniques))
+    mask = annotation == keep
+    return mask, annotation, keep
+
+def convert_mask_to_rectangles(mask):
+    label = measure.label(mask)
+    rprops = measure.regionprops(label)
+    rectangles = []
+    for rprop in rprops:
+        minr, minc, maxr, maxc = rprop.bbox
+        rectangles.append((
+            (minc, minr),
+            (maxc, maxr)
+        ))
+    return rectangles
+
+def convert_rectangles_to_regions(config, rectangles):
+    regions = utils.rect2regions(rectangles, microscope.get_pixelsize(config)) # New window size
+    # points = utils.get_rect_center(rectangles, microscope.get_pixelsize(config))
+    points = utils.get_rect_center(rectangles, microscope.get_pixelsize(config), microscope.get_resolution(config))
+    x_offset, y_offset = microscope.get_offsets(config)
+    rect_region_offset = [(x + x_offset, y + y_offset) for (x, y) in points]
+    return rect_region_offset, regions, rectangles # returns the offset and the regions dimensions
+
 class RegionSelector:
     """
     Creates a `RegionSelector` to store possible regions.
@@ -1072,7 +1120,7 @@ class RegionSelector:
     Regions are stored into a buffer and are queried by an optimization routine.
     When the buffer is empty new regions are asked from the user.
     """
-    def __init__(self, config_overview, overview="640"):
+    def __init__(self, config_overview, config):
         """
         Instanciates a `RegionSelector`
 
@@ -1080,7 +1128,9 @@ class RegionSelector:
         :param overview: A `str` of the name of the overview
         """
         self.config_overview = config_overview
-        self.overview = overview
+        self.mode = config["mode"]
+        assert self.mode in ["manual", "auto"], "The mode {} is not implemented".format(self.mode)
+        self.overview = config["overview"]
         self.buffer = []
 
     def __iter__(self):
@@ -1098,11 +1148,12 @@ class RegionSelector:
         returns : The next element into the buffer
         """
         if len(self.buffer) < 1:
-            self._fill_buffer()
+            func = getattr(self, f"_fill_{self.mode}_buffer")
+            func()
         item = self.buffer.pop(0)
         return item
 
-    def _fill_buffer(self):
+    def _fill_manual_buffer(self):
         """
         Asks the user to fill the buffer with some regions
         """
@@ -1110,6 +1161,29 @@ class RegionSelector:
         input("[----] Once done hit enter!")
         regions_offset = user.get_regions(self.overview, self.config_overview)
         for offset in regions_offset:
+            self.buffer.append(offset)
+    
+    def _fill_auto_buffer(self):
+        """
+        Automatically fills the buffer with some regions
+        """
+        print("[!!!!] Now would be a good time to move the overwiew...")
+        input("[----] Once done hit enter!")
+
+        overview_image = microscope.get_overview(config_overview, name=overview)
+
+        # Saves the overview image
+        imwrite(os.path.join(imsavepath, f"overview-{t}.tif"), overview_image.astype(numpy.uint16))
+        wait_for_user_to_annotate_image(os.path.join(imsavepath, f"overview-{t}.tif"))
+
+        # Loads the annotations
+        image_path = wait_for_drag_and_drop_annotation_path()
+        mask, raw, keep_idx = load_annotations_and_ask_which_ids_to_keep(image_path)
+        rectangles = convert_mask_to_rectangles(mask)
+
+        rect_region_offset, regions, rectangles = convert_rectangles_to_regions(config_overview, rectangles)
+
+        for offset in rect_region_offset:
             self.buffer.append(offset)
 
 class PointSelector:
