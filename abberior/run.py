@@ -166,7 +166,7 @@ def run_TS(config, prefart="random", restore_folder=None, dry_run=False, verbose
         config_conf, config_sted
     )
     region_selector = RegionSelector(
-        config_overview, config=config.region_opts
+        config_overview, config=config.config
     )
     knowledge_generator = KnowledgeGenerator(
         config.microscope_conf, config=config, ndims=ndims, **config.knowledge_opts

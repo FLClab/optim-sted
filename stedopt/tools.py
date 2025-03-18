@@ -8,15 +8,17 @@ import datetime
 import h5py
 import glob
 import uuid
+import tifffile
 
 from functools import partial
 from scipy import optimize, interpolate
 from matplotlib import pyplot
 from collections import defaultdict
-from skimage import filters, transform
+from skimage import filters, transform, measure
 
 from abberior import microscope, user, utils
 from banditopt.utils import bigger_than, get_foreground
+from tiffwrapper import imwrite
 
 from .experiment import Experiment
 from .create import create_microscope, create_dymin_microscope, create_rescue_microscope
@@ -1093,9 +1095,9 @@ def load_annotations_and_ask_which_ids_to_keep(path):
     mask = annotation == keep
     return mask, annotation, keep
 
-def convert_mask_to_rectangles(mask):
+def convert_mask_to_rectangles(mask, image=None):
     label = measure.label(mask)
-    rprops = measure.regionprops(label)
+    rprops = measure.regionprops(label, intensity_image=image)
     rectangles = []
     for rprop in rprops:
         minr, minc, maxr, maxc = rprop.bbox
@@ -1128,10 +1130,12 @@ class RegionSelector:
         :param overview: A `str` of the name of the overview
         """
         self.config_overview = config_overview
-        self.mode = config["mode"]
+        self.mode = config["region_opts"]["mode"]
         assert self.mode in ["manual", "auto"], "The mode {} is not implemented".format(self.mode)
-        self.overview = config["overview"]
+        self.overview = config["region_opts"]["overview"]
+        self.config = config
         self.buffer = []
+        self.t = 0
 
     def __iter__(self):
         """
@@ -1170,21 +1174,23 @@ class RegionSelector:
         print("[!!!!] Now would be a good time to move the overwiew...")
         input("[----] Once done hit enter!")
 
-        overview_image = microscope.get_overview(config_overview, name=overview)
+        overview_image = microscope.get_overview(self.config_overview, name=self.overview)
 
         # Saves the overview image
-        imwrite(os.path.join(imsavepath, f"overview-{t}.tif"), overview_image.astype(numpy.uint16))
-        wait_for_user_to_annotate_image(os.path.join(imsavepath, f"overview-{t}.tif"))
+        imwrite(os.path.join(self.config["save_folder"], f"overview-{self.t}.tif"), overview_image.astype(numpy.uint16))
+        wait_for_user_to_annotate_image(os.path.join(self.config["save_folder"], f"overview-{self.t}.tif"))
 
         # Loads the annotations
         image_path = wait_for_drag_and_drop_annotation_path()
         mask, raw, keep_idx = load_annotations_and_ask_which_ids_to_keep(image_path)
-        rectangles = convert_mask_to_rectangles(mask)
+        rectangles = convert_mask_to_rectangles(mask, overview_image)
 
-        rect_region_offset, regions, rectangles = convert_rectangles_to_regions(config_overview, rectangles)
+        rect_region_offset, regions, rectangles = convert_rectangles_to_regions(self.config_overview, rectangles)
 
         for offset in rect_region_offset:
             self.buffer.append(offset)
+
+        self.t += 1
 
 class PointSelector:
     """
