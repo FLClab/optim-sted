@@ -1122,7 +1122,7 @@ class RegionSelector:
     Regions are stored into a buffer and are queried by an optimization routine.
     When the buffer is empty new regions are asked from the user.
     """
-    def __init__(self, config_overview, config):
+    def __init__(self, config_overview, config=None):
         """
         Instanciates a `RegionSelector`
 
@@ -1131,7 +1131,7 @@ class RegionSelector:
         """
         self.config_overview = config_overview
         self.mode = config["region_opts"]["mode"]
-        assert self.mode in ["manual", "auto"], "The mode {} is not implemented".format(self.mode)
+        assert self.mode in ["manual", "auto", "random"], "The mode {} is not implemented".format(self.mode)
         self.overview = config["region_opts"]["overview"]
         self.config = config
         self.buffer = []
@@ -1156,6 +1156,26 @@ class RegionSelector:
             func()
         item = self.buffer.pop(0)
         return item
+
+    def _fill_random_buffer(self):
+        """
+        Randomly fills the buffer with some regions
+        """
+        print("[!!!!] Now would be a good time to move the overwiew...")
+        input("[----] Once done hit enter!")
+        image_size_x, image_size_y = microscope.get_imagesize(self.config_overview)
+        
+        px = random.randint(0, int(image_size_x))
+        py = random.randint(0, int(image_size_y))
+        regions = utils.points2regions(
+            [(px, py)],
+            microscope.get_pixelsize(self.config_overview),
+            microscope.get_resolution(self.config_overview),
+        )
+        x_offset, y_offset = microscope.get_offsets(self.config_overview)
+        regions_offsets = [(x + x_offset, y + y_offset) for (x, y) in regions]
+        for offset in regions_offsets:
+            self.buffer.append(offset)
 
     def _fill_manual_buffer(self):
         """
