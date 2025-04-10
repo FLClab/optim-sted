@@ -374,7 +374,7 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true",
                         help="Wheter a dry-run is run")
     parser.add_argument("--prefart", type=str, default="random",
-                        help="Selects the preference articulation method. Select from: `random`, `optim`, `prefnet`, `region`")
+                        help="Selects the preference articulation method. Select from: `random`, `optim`, `prefnet`, `region`, `minimize`, `maximize`")
     parser.add_argument("--restore-folder", type=str, default=None,
                         help="Selects the model from which to restore training")
     parser.add_argument("--options", type=str, default=None, nargs="+",

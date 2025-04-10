@@ -32,7 +32,7 @@ class PreferenceArticulator:
         """
         self.config = config
         self.mode = mode
-        assert mode in ["random", "optim", "region", "prefnet"], f"The selected mode `{mode}` does not exist"
+        assert mode in ["random", "optim", "region", "prefnet", "minimize", "maximize"], f"The selected mode `{mode}` does not exist"
 
         # Loads the prefnet model
         if self.mode == "prefnet":
@@ -45,6 +45,8 @@ class PreferenceArticulator:
                 self.regions = json.load(open(os.path.join(os.path.dirname(__file__), "articulation", "preferences_resolution-snr-bleach.json"), "r"))
             else:
                 self.regions = json.load(open(os.path.join(os.path.dirname(__file__), "articulation", "preferences.json"), "r"))
+        elif self.mode in ["minimize", "maximize"]:
+            assert len(config["obj_names"]) == 1, "The `minimize` and `maximize` modes only support one objective"
 
     def __call__(self, thetas, objectives, with_time, times, *args, **kwargs):
         """
@@ -60,6 +62,36 @@ class PreferenceArticulator:
         """
         func = getattr(self, f"_{self.mode}_articulation")
         return func(thetas, objectives, with_time, times, *args, **kwargs)
+    
+    def _minimize_articulation(self, thetas, objectives, with_time, times, *args, **kwargs):
+        """
+        Implements the `minimize` mode.
+
+        It selects the point with the lowest value of the objective
+
+        :param thetas: A `numpy.ndarray` of options sampled from the algorithms.
+        :param objectives: A list of objectives name.
+        :param with_time: (bool) Wheter of not to consider *times* as an objective.
+        :param times: An array of time for acquiring an image using each configuration in *thetas*.
+
+        :returns : An `int` of the selected index
+        """
+        return numpy.argmin(thetas[0]), numpy.argmin(thetas[0])
+
+    def _maximize_articulation(self, thetas, objectives, with_time, times, *args, **kwargs):
+        """
+        Implements the `maximize` mode.
+
+        It selects the point with the highest value of the objective
+
+        :param thetas: A `numpy.ndarray` of options sampled from the algorithms.
+        :param objectives: A list of objectives name.
+        :param with_time: (bool) Wheter of not to consider *times* as an objective.
+        :param times: An array of time for acquiring an image using each configuration in *thetas*.
+
+        :returns : An `int` of the selected index
+        """
+        return numpy.argmax(thetas[0]), numpy.argmax(thetas[0])
 
     def _random_articulation(self, thetas, objectives, with_time, times, *args, **kwargs):
         """
