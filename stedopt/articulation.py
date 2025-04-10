@@ -76,7 +76,7 @@ class PreferenceArticulator:
 
         :returns : An `int` of the selected index
         """
-        return numpy.argmin(thetas[0]), numpy.argmin(thetas[0])
+        return numpy.argmin(thetas[0].ravel()), numpy.argmin(thetas[0].ravel())
 
     def _maximize_articulation(self, thetas, objectives, with_time, times, *args, **kwargs):
         """
@@ -91,7 +91,7 @@ class PreferenceArticulator:
 
         :returns : An `int` of the selected index
         """
-        return numpy.argmax(thetas[0]), numpy.argmax(thetas[0])
+        return numpy.argmax(thetas[0].ravel()), numpy.argmax(thetas[0].ravel())
 
     def _random_articulation(self, thetas, objectives, with_time, times, *args, **kwargs):
         """
