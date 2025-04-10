@@ -1,0 +1,12 @@
+_BASE_:
+- BASE_config_sted.yml
+- BASE_config_gp.yml
+param_names:
+- p_ex
+obj_names:
+- Resolution
+random_state: 42
+x_maxs:
+- 20.0e-6
+x_mins:
+- 0.

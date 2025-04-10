@@ -13,6 +13,7 @@ setup(
         "h5py",
         "pyyaml",
         "metrics @ git+https://github.com/FLClab/metrics.git",
+        "tiffwrapper @ git+https://github.com/FLClab/TiffWrapper.git",
         "numpy",
         "matplotlib",
         "torch",
