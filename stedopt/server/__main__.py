@@ -7,4 +7,4 @@ parser.add_argument("--logdir", required=True, type=str, help="Log directory of 
 args = parser.parse_args()
 
 app = create_app(args.logdir)
-app.run_server(debug=True)
+app.run(debug=True)

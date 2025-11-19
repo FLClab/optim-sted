@@ -1,0 +1,39 @@
+_BASE_:
+- BASE_config_sted.yml
+- BASE_config_gp.yml
+nbre_trials: 1
+optim_length: 100
+save_folder: ../data/stedfm-optimization
+multiprocess_opts:
+  num_processes: 1
+datamap_opts:
+  mode: "real"
+  shape: # The shape of the datamap
+    - 224
+    - 224
+  path:
+    - ../data/datamap/actin
+param_names:
+- p_sted
+- p_ex
+- pdt
+obj_names: 
+- STEDFM
+obj_normalization:
+  STEDFM:
+    max: -2.0
+    min: 2.0
+random_state: 42
+regressor_args:
+  STEDFM:
+    bandwidth: 2.0
+    s_lb: 0.001
+    s_ub: 0.3
+x_maxs:
+- 300.0e-3
+- 2.0e-6
+- 30.0e-6
+x_mins:
+- 0.
+- 0.
+- 0.

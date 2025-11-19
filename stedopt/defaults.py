@@ -34,9 +34,9 @@ FLUO = { # ATTO647N
 }
 
 action_spaces = {
-    "p_sted" : {"low" : 0., "high" : 350.0e-3},
-    "p_ex" : {"low" : 0., "high" : 10.0e-6},
-    "pdt" : {"low" : 0.0e-6, "high" : 60.0e-6},
+    "p_sted" : {"low" : 0., "high" : 175.0e-3},
+    "p_ex" : {"low" : 0., "high" : 150.0e-6},
+    "pdt" : {"low" : 10.0e-6, "high" : 150.0e-6},
 }
 
 # Define the objectives and regressors here
@@ -47,7 +47,8 @@ obj_dict = {
     # "Resolution" : objectives.FWHMResolution(pixelsize=20e-9),
     "Squirrel" : objectives.Squirrel(normalize=True, use_foreground=True),
     "FFTMetric" : objectives.FFTMetric(),
-    "Crosstalk" : objectives.Crosstalk()
+    "Crosstalk" : objectives.Crosstalk(),
+    "STEDFM" : objectives.STEDFMMetric(),
 }
 regressors_dict = {
     "sklearn_BayesRidge" : algorithms.sklearn_BayesRidge,

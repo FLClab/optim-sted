@@ -18,8 +18,8 @@ cmap = matplotlib.colors.LinearSegmentedColormap.from_list(
 #     colors=["#ffc949", "#ff5554"]
 #     colors = ["#1b5bdb", "#ffc949"]
 )
-matplotlib.cm.register_cmap(cmap=cmap)
-matplotlib.cm.register_cmap(cmap=cmap.reversed())
+matplotlib.colormaps.register(cmap=cmap)
+matplotlib.colormaps.register(cmap=cmap.reversed())
 
 OBJ_PLOT_LIM = {
     "Resolution" : (0, 250),
@@ -28,6 +28,7 @@ OBJ_PLOT_LIM = {
     "SNR" : (0, 2.0),
     "FFTMetric" : (0, 1.0),
     "Crosstalk" : (0, 1.0),
+    "STEDFM" : (-5.0, 5.0),
 }
 
 def show_images(config, conf1, sted_image, conf2, idx=0, **kwargs):

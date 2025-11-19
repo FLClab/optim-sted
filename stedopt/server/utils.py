@@ -37,7 +37,11 @@ BOUNDS = {
     "Crosstalk": {
         "min": -numpy.inf,
         "max": 0.25,
-    }
+    },
+    "STEDFM": {
+        "min": 0.5,
+        "max": numpy.inf,
+    },
 }
 
 def isin_bounds(y, obj_name):

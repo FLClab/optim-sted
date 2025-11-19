@@ -109,7 +109,7 @@ def create_app(PATH):
                 dbc.Row([
                     dbc.Col([dcc.Clipboard(id="folder-copy", title="copy", style=text_style,)], width=1),
                     # dbc.Col([dcc.Dropdown([{"label" : folder.split("data/")[-1], "value" : folder} for folder in folders], folders[-1], id="folder", clearable=False, style={"font-size" : 12}),], width=11)])
-                    dbc.Col([dmc.MultiSelect(data=split_folders(folders), value=[folders[-1]], id="folder", clearable=True, limit=100, searchable=True, nothingFound="No options found...", placeholder="Select model...", maxSelectedValues=1, style={"font-size" : 12}),], width=11)])
+                    dbc.Col([dmc.MultiSelect(data=split_folders(folders), value=[folders[-1]], id="folder", clearable=True, limit=100, searchable=True, nothingFoundMessage="No options found...", placeholder="Select model...", maxValues=1, style={"font-size" : 12}),], width=11)])
             ], width=6),
             dbc.Col([
                 dbc.Row([
